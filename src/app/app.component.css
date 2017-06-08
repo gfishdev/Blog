@@ -1,0 +1,25 @@
+#menu {
+    padding: 1.5rem 0 2rem 0;
+    background-color: #0f597d;
+    color: #fff;
+}
+
+#conteudo {
+    padding: 2.5rem 2em 2rem 2rem;
+    text-align: justify;
+    color: #0f597d;
+}
+
+#menu-titulo {
+    padding: .5rem 1.5rem;
+}
+
+#menu-titulo h6{
+    color: #B0C4B1;
+}
+
+@media (max-width: 767px) {
+    #menu-titulo {
+        text-align: center;
+    }
+}
