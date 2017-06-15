@@ -1,7 +1,7 @@
 <!--The whole content below can be removed with the new code.-->
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-4" id="menu">
+    <div class="col-md-4 sidebar" id="menu">
       <header>
         <div id="menu-titulo">
           <h1>Code Guilherme</h1>
@@ -22,22 +22,38 @@
         </nav>
       </header>
     </div>
-    <div class="col-md-8" id="conteudo">
-      <article id="sobre-mim">
-        <h1>Sobre mim</h1>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis non erat ut auctor. Pellentesque sit amet leo ut ante venenatis tempus. Duis elementum massa nec orci vulputate, at pretium orci viverra. Morbi semper turpis est, quis imperdiet tortor pretium id. Morbi venenatis eget nisl ac rutrum. Donec sollicitudin, dui at dignissim dignissim, magna justo luctus sapien, eu aliquam ante magna tempus risus. Maecenas vitae condimentum purus. Proin vitae ex euismod, sodales risus eu, faucibus mauris. Vivamus tincidunt leo augue, vitae sollicitudin risus aliquet a. Duis ac est quis est lobortis semper. Phasellus vitae eros viverra, placerat sem vitae, iaculis lectus. Ut massa risus, vehicula ac accumsan eu, fringilla sed dui.
+    <div class="col-md-8 offset-md-4" id="conteudo">
+      <article id="sobre-mim" class="row">
+        <div class="col-md-12">
+          <h1>Sobre mim</h1>
+          <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis non erat ut auctor. Pellentesque sit amet leo ut ante venenatis tempus. Duis elementum massa nec orci vulputate, at pretium orci viverra. Morbi semper turpis est, quis imperdiet tortor pretium id. Morbi venenatis eget nisl ac rutrum. Donec sollicitudin, dui at dignissim dignissim, magna justo luctus sapien, eu aliquam ante magna tempus risus. Maecenas vitae condimentum purus. Proin vitae ex euismod, sodales risus eu, faucibus mauris. Vivamus tincidunt leo augue, vitae sollicitudin risus aliquet a. Duis ac est quis est lobortis semper. Phasellus vitae eros viverra, placerat sem vitae, iaculis lectus. Ut massa risus, vehicula ac accumsan eu, fringilla sed dui.
+          </div>
         </div>
       </article>
-      <section id="artigos">
-        <article class="artigo">
-          <h1>Artigo 1</h1>
-          <div>In suscipit fringilla lacus, nec scelerisque ante rhoncus ac. Praesent malesuada, erat in tristique vestibulum, justo augue euismod enim, a consequat leo diam et enim. Morbi lacinia lacus ut magna consequat vulputate. Phasellus eleifend efficitur quam, sed sodales tortor fringilla a. Sed vel magna risus. Nunc efficitur mi eget mollis porta. Ut commodo vulputate ipsum nec scelerisque. Duis semper vestibulum urna sed fermentum. Donec ultricies lacus vitae tortor ullamcorper, nec commodo leo aliquet. Pellentesque at egestas lorem, nec molestie mi. Maecenas lorem urna, gravida in ligula eget, fringilla maximus urna. Suspendisse potenti. Mauris luctus pulvinar convallis. Curabitur diam eros, ornare in congue nec, porta eget nisi. Nulla id nunc mattis, vulputate mauris nec, facilisis eros. Nulla in faucibus nisl.
-          </div>
-          <button class="btn btn-primary">ler mais</button>
-        </article>
-        conteudo
+      <section id="artigos" class="row">
+        <div class="col-md-6">
+          <div class="p-3"></div>
+          <article class="card artigo">
+            <div class="card-block">
+              <h2 class="card-title">Artigo 1</h2>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut est pulvinar, fermentum dui non, vestibulum magna. Suspendisse a justo vel lorem commodo mollis. Suspendisse dictum, lacus vel accumsan ultrices, orci sapien faucibus magna, sit amet tincidunt elit sem pretium mauris. Quisque semper, lectus vitae mattis rhoncus, arcu erat laoreet sem, et tincidunt tellus felis sit amet arcu. Vivamus dictum sodales condimentum. Aliquam lobortis sapien ut fringilla pretium. Ut quis augue sed dolor euismod malesuada in ullamcorper risus.</p>
+              <button class="btn btn-primary">ler mais</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <div class="p-3"></div>
+          <article class="card artigo">
+            <div class="card-block">
+              <h2 class="card-title">Artigo 2</h2>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut est pulvinar, fermentum dui non, vestibulum magna. Suspendisse a justo vel lorem commodo mollis. Suspendisse dictum, lacus vel accumsan ultrices, orci sapien faucibus magna, sit amet tincidunt elit sem pretium mauris. Quisque semper, lectus vitae mattis rhoncus, arcu erat laoreet sem, et tincidunt tellus felis sit amet arcu. Vivamus dictum sodales condimentum. Aliquam lobortis sapien ut fringilla pretium. Ut quis augue sed dolor euismod malesuada in ullamcorper risus.</p>
+              <button class="btn btn-primary">ler mais</button>
+            </div>
+          </article>
+        </div>
       </section>
+      <app-contato></app-contato>
     </div>
   </div>
 </div>

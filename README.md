@@ -2,6 +2,23 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.1.
 
+npm install
+
+npm install -g @angular/cli
+npm install bootstrap@4.0.0-alpha.6 -save
+npm install jquery-slim -save
+npm install tether -save
+
+
+##comandos##
+ng build --aot
+ng serve -watch
+
+## Guias de Referencias ##
+http://caniuse.com/
+http://todomvc.com/
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
