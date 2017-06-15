@@ -8,8 +8,9 @@ import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms'
   styleUrls: ['./contato.component.css']
 })
 export class ContatoComponent implements OnInit {
-
-  constructor() { }
+  contatoForm: FormGroup;
+  
+  constructor(private fb: FormBuilder) {  }
 
   mensagemErro = { 'nome' : { 'required': 'favor preencher o nome' }
                   ,'email' : { 'required': 'favor preencher o email',
