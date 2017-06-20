@@ -6,14 +6,21 @@ import { ContatoComponent } from './contato/contato.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { HttpModule } from '@angular/http';
+import { HomeComponent } from './home/home.component';
+import { RouterModule } from '@angular/router';
+
 @NgModule({
   declarations: [
     AppComponent,
-    ContatoComponent
+    ContatoComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
