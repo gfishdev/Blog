@@ -13,7 +13,7 @@ npm install jquery-slim -save
 npm install tether -save
 
 
-##comandos##
+## comandos ##
 ng build --aot
 
 ng serve -watch
