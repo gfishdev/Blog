@@ -12,6 +12,8 @@ npm install jquery-slim -save
 
 npm install tether -save
 
+npm install --save-dev @types/jquery
+
 
 ## comandos ##
 ng build --aot

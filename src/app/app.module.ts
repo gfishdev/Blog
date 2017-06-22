@@ -9,18 +9,22 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
+import { ArtigoComponent } from './artigo/artigo.component';
+
+import { routes } from './router';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContatoComponent,
-    HomeComponent
+    HomeComponent,
+    ArtigoComponent
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     HttpModule,
-    RouterModule
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

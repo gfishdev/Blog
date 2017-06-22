@@ -1,0 +1,12 @@
+[
+	{
+		"titulo":"HTML 5 Vídeos",
+		"resumo": "O elemento HTML  <video> é utilizado para incorporar conteúdo de vídeo em um documento HTML ou XHTML.",
+		"id":1
+	},
+	{
+		"titulo":"HTML 5: edição de conteúdos e nos campos de formulário",
+		"resumo": "Você não conhece nem a metade deles. A HTML5 definiu mais de meia dúzia de novos tipos de campos que você pode usar em seus formulários. E quando digo "usar", é usar agora - sem nenhuma gambiarra, hack ou soluções alternativas. Só não se entusiasme tanto; Eu não disse que todos estes recursos são suportados por todos os navegadores da atualidade. Oh, meu Deus, eu também não disse em nenhum. Em navegadores modernos, seus formulários irão arrebentar. Nos mais antiquados eles irão apenas cumprir sua função. Ou seja, os recursos irão se adaptar e degradar para funcionar em todos os navegadores. Até no IE6.",
+		"id":2
+	}
+]
