@@ -44,6 +44,13 @@ app.get('/api/artigo/*', function(req, res) {
     });
 });
 
+app.get('/api/artigos', function(req, res) {
+    const artigosDbPath = dbFolder + '/artigos.json';
+    tryRead(artigosDbPath, function(artigos) {
+        res.status(200).json(artigos);
+    });
+});
+
 // se o arquivo não existe, retorna JSON array vazio
 // se o arquivo existe, retorna JSON array com todos os controles
 var tryRead = function(path, callback) {

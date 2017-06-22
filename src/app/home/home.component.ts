@@ -22,7 +22,9 @@ export class HomeComponent implements OnInit {
       });
   }
   resultadoArtigos(artigos) {
-    this.artigos = JSON.parse(artigos.__body);
+    if(artigos._body != undefined) {
+      this.artigos = JSON.parse(artigos._body);
+    }
   }
 }
 export class Artigo {

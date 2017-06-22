@@ -18,7 +18,7 @@ export class ArtigoComponent implements OnInit {
   ngOnInit() {
     this.activatedRoute.params.subscribe(params => {
       let id = params['id'];
-      this.http.get('/api/artigos/' + id)
+      this.http.get('/api/artigo/' + id)
         .subscribe(artigo => {
           this.zone.run(() => {
             this.resultadoArtigo(artigo);
