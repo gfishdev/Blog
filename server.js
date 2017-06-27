@@ -3,6 +3,8 @@ const bodyParser = require('body-parser');
 const fs = require('fs');
 const dbFolder = __dirname + '/db';
 const contatosDbPath = dbFolder + '/contatos.json';
+const WebSocket = require('ws');
+const wss = new WebSocket.Server({ port: 3000 });
 
 // antes do servidor iniciar, verifica se a pasta db não existe
 //se não existe, cria
@@ -51,6 +53,16 @@ app.get('/api/artigos', function(req, res) {
     });
 });
 
+wss.on('connection', function connection(ws) {
+    ws.on('message', function incoming(message) {
+        wss.clients.forEach(function each(client) {
+            if (client.readyState === WebSocket.OPEN) {
+                client.send(message);
+            }
+        });
+    });
+});
+
 // se o arquivo não existe, retorna JSON array vazio
 // se o arquivo existe, retorna JSON array com todos os controles
 var tryRead = function(path, callback) {
@@ -67,7 +79,8 @@ var tryRead = function(path, callback) {
 }
 
 app.get('*', function(req, res) {
-    res.status(404).send({error: 'API Not found'});
+    // res.status(404).send({error: 'API Not found'});
+    res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
 
 app.listen(process.env.PORT || 3000, function() {

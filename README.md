@@ -23,6 +23,9 @@ ng build --aot
 
 ng serve -watch
 
+# gerar component
+ng generate component <NOME_DO_COMPONENTE>
+
 ## Guias de Referencias ##
 http://caniuse.com/
 

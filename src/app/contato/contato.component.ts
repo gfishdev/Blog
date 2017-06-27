@@ -5,6 +5,8 @@ import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms'
 import { Http, Response, RequestOptions, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
 
+import { EmailValidator } from '../util/emailValidator';
+
 @Component({
   selector: 'app-contato',
   templateUrl: './contato.component.html',
@@ -30,7 +32,7 @@ export class ContatoComponent implements OnInit {
   buildForm() {
     this.contatoForm = this.fb.group({
       'nome': ['', [Validators.required]],
-      'email': ['', [Validators.required]],
+      'email': ['', [Validators.required, EmailValidator.emailIsValid]],
       'texto': ['', [Validators.required,
       Validators.minLength(4), Validators.maxLength(100)]]
       });
