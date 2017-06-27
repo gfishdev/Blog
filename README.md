@@ -14,6 +14,9 @@ npm install tether -save
 
 npm install --save-dev @types/jquery
 
+# Projeto sem node_modules
+
+npm install -g @angular/cli@lastest --save-dev
 
 ## comandos ##
 ng build --aot
